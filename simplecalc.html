@@ -19,18 +19,21 @@
             </div>
         </div>
         <br>
+        <script type="text/javascript">
+            var arg = document.getElementsByName("arg1");
+            
+            function calc(){
+            var answer_input = document.getElementsByName("answer");
+            var answer = eval(arg);
+            answer_input.value = answer;
+            }
+        </script>
         <a href="utility.html">HOME</a>
         <br>
         <h4>SIMPLE CALCULATOR</h4>
         <input name="arg1"></input>
+        <input type="submit" onclick="calc()"></input>
         <br><br>
         <h4>ANSWER</h4>
-        <input name="answer"></input>
-        <script type="text/javascript">
-            var arg = document.getElementsByName("arg1");
-            var answer_input = document.getElementsByName("answer");
-            var answer = eval(arg)
-            answer_input.value = answer;
-        </script>
     </body>
 </html>
