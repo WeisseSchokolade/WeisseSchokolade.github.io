@@ -23,7 +23,7 @@
             var arg = document.getElementsByName("arg1");
             
             function calc(){
-                var answer_input = document.getElementsByName("answer");
+                var answer_input = document.getElementsByName("answer_input");
                 var answer = eval(arg);
                 answer_input.value = answer;
             }
@@ -35,6 +35,6 @@
         <input type="submit" onclick="calc()"></input>
         <br><br>
         <h4>ANSWER</h4>
-        <input name="answer"></input>
+        <input name="answer_input"></input>
     </body>
 </html>
