@@ -1,6 +1,7 @@
 var arg1 = document.getElementsByName("arg1");
+var answer_input = document.getElementsByName("answer");
 
-eval(arg1)
+var answer = eval(arg1)
 
-inputF.value = "textValue";
-arg1.innerHTML = "Value = " + "'" + inputF.value + "'";
+inputF.value = answer;
+answer_input.innerHTML = "Value = " + "'" + inputF.value + "'";
